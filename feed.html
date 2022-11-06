@@ -26,11 +26,11 @@
         <i class="bi bi-pen"></i>
     </nav> -->
 
-    <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-3 shadow-lg">
-        <i class="bi bi-house fs-4 text-secondary"></i>
-        <i class="bi bi-sunglasses fs-4 text-secondary"></i>
-        <i class="bi bi-bar-chart-fill fs-4 text-secondary"></i>
-        <i class="bi bi-filter"></i>
+    <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-2 shadow-lg border-top rounded">
+        <a class="btn" id="btn-back-to-top"><i class="bi bi-house fs-4 text-secondary"></i></a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-sunglasses fs-4 text-secondary"></i></a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-bar-chart-fill fs-4 text-secondary"></i></a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-filter"></i></a>
     </nav>
 
     <div class="container">
@@ -41,11 +41,11 @@
             <img src="assets/images/profile.png" alt="" height="70"> <b class="lead fs-3 fw-bold">Hey Ritik</b>
           </a>
     
-            <form class="form d-none d-lg-block">
-                <button class="btn btn-outline-secondary mx-4 btn-sm" type="submit"><i class="bi bi-pen"></i> 32 Answer</button>
-                <button class="btn btn-outline-secondary mx-4 btn-sm" type="submit"><i class="bi bi-sunglasses"></i></i> 50 Streak</button> 
-                <button class="btn btn-outline-secondary mx-4 btn-sm" type="submit"><i class="bi bi-bar-chart-fill"></i> 121 Rank</button>
-            </form>
+            <div class="form d-none d-lg-block">
+                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen"></i> 32 Answer</button>
+                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-sunglasses"></i></i> 50 Streak</button> 
+                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-bar-chart-fill"></i> 121 Rank</button>
+            </div>
 
         </div>
       </nav>
@@ -98,7 +98,7 @@
                             <p class="h5">Which exam is better JEE or NEET?</p>
                         </div>
                         <div class="col text-end">
-                            <button type="button" class="btn btn-primary"><i class="bi bi-pen"></i> Elif5</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i> Elif5</button>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             <b>Which exam is better JEE or NEET?</b>
                         </div>
                         <div class="col-2 text-end">
-                            <button type="button" class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i></button>
                         </div>
                     </div>
                 </div>
@@ -254,20 +254,98 @@
           </div>
       </div>
 
-
-      <!-- <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-8">
-                hello
+      <!-- Button trigger modal -->
+    <!-- <a type="button" class="btn btn-primary" style="margin-bottom:100px ;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </a>
+     -->
+    <!-- Demo Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="col-sm-4">
-                Hii
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-      </div> -->
+        </div>
+    </div>
+
+
+     <!-- Write Elif Modal -->
+    <div class="modal fade" id="writeelif" tabindex="-1" aria-labelledby="writeeliflabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <img src="assets/images/profile.png" alt="" height="30">
+            <h6 class="modal-title" id="exampleModalLabel">Which exam is better JEE or NEET?</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Explain like I’m five</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Elify it</button>
+                    </div>
+                <div class="alert alert-primary alert-dismissible fade show mt-3" role="alert" style=" border-style: solid; border-color: #3366FF;">
+                    <strong>Approach to write the Answer</strong>
+                    <p>
+                        <ul>
+                            <li>State it: State the idea clearly, in a few sentences or less.</li>
+                            <li>Elaborate: Explain the idea further in your own words. Elaborate on the concept in a paragraph or less.</li>
+                            <li>Exemplify: Provide concrete examples (and counter-examples, if necessary).</li>
+                            <li>Summarise: Summarise your explanation.</li>
+                        </ul>
+                    </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+
+            </div>
+
+            
+        </div>
+        </div>
+    </div>
 
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+        
+      </script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
