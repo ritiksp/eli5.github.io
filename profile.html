@@ -14,6 +14,8 @@
 
   <style>
 
+
+
         .col img{
             height:10%;
             width: 100%;
@@ -52,6 +54,14 @@
             width: 40px;
             border-radius: 100%;
         }
+
+        @media (max-width: 575.98px) { 
+            .col img{
+              height: 100%;
+              width: 100%;
+              object-fit: fill;
+            }
+          }
   </style>
   <body>
     
@@ -77,19 +87,22 @@
       <div class="container">
 
         <form>
-            <legend>Disabled fieldset example</legend>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ritik.singh@elif5.com" disabled>
+          <legend class="small">Complete your profile and start explaining. </legend>
+
+          <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <i class="bi bi-check-circle"></i> 
+            <div>
+              &nbsp; ritik.singh@eli5.com
             </div>
+          </div>
 
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1">@</span>
               <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Select Avatar</label>
+            <div class="mb-3 d-none d-lg-block">
+              <label for="exampleInputEmail1" class="form-label small">Select Avatar</label>
               <div class="container parent">
                 <div class="row grid-row">
                 <!-- first 8 col -->
@@ -255,9 +268,196 @@
 
             </div>
 
-            
 
-            <a href="./feed.html" type="submit" class="btn btn-primary">Submit</a>
+
+ <!-- Mobile Avatar -->
+
+            <div class="mb-3 d-block d-sm-none">
+              <label for="exampleInputEmail1" class="form-label small">Select Avatar</label>
+              <div class="container parent">
+                <div class="row grid-row">
+                <!-- first 8 col -->
+                    <div class='col text-center'>
+                    <input type="radio" name="imgbackgroundm" id="imgm1" class="d-none imgbgchk" value="">
+                      <label for="imgm1">
+                        <img src="assets/images/profile/pic1.png" alt="Image 1">
+                        <div class="tick_container">
+                          <div class="tick"><i class="bi bi-check"></i></div>
+                        </div>
+                        </label>
+                    </div>
+                    <div class='col text-center'>
+                    <input type="radio" name="imgbackgroundm" id="imgm2" class="d-none imgbgchk" value="">
+                      <label for="imgm2">
+                        <img src="assets/images/profile/pic2.png" alt="Image 2">
+                        <div class="tick_container">
+                          <div class="tick"><i class="bi bi-check"></i></div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class='col text-center'>
+                    <input type="radio" name="imgbackgroundm" id="imgm3" class="d-none imgbgchk" value="">
+                      <label for="imgm3">
+                        <img src="assets/images/profile/pic3.png" alt="Image 3">
+                        <div class="tick_container">
+                          <div class="tick"><i class="bi bi-check"></i></div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                <div class="row grid-row">   
+                    <div class='col text-center'>
+                    <input type="radio" name="imgbackgroundm" id="imgm4" class="d-none imgbgchk" value="">
+                        <label for="imgm4">
+                          <img src="assets/images/profile/pic4.png" alt="Image 4">
+                          <div class="tick_container">
+                            <div class="tick"><i class="bi bi-check"></i></div>
+                          </div>
+                        </label>
+                    </div>
+
+                    <div class='col text-center'>
+                      <input type="radio" name="imgbackgroundm" id="imgm5" class="d-none imgbgchk" value="">
+                        <label for="imgm5">
+                          <img src="assets/images/profile/pic5.png" alt="Image 1">
+                          <div class="tick_container">
+                            <div class="tick"><i class="bi bi-check"></i></div>
+                          </div>
+                          </label>
+                      </div>
+                      <div class='col text-center'>
+                      <input type="radio" name="imgbackgroundm" id="imgm6" class="d-none imgbgchk" value="">
+                        <label for="imgm6">
+                          <img src="assets/images/profile/pic6.png" alt="Image 2">
+                          <div class="tick_container">
+                            <div class="tick"><i class="bi bi-check"></i></div>
+                          </div>
+                        </label>
+                      </div>
+                  </div>
+
+                  <div class="row grid-row">
+
+                      <div class='col text-center'>
+                      <input type="radio" name="imgbackgroundm" id="imgm7" class="d-none imgbgchk" value="">
+                        <label for="imgm7">
+                          <img src="assets/images/profile/pic7.png" alt="Image 3">
+                          <div class="tick_container">
+                            <div class="tick"><i class="bi bi-check"></i></div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class='col text-center'>
+                      <input type="radio" name="imgbackgroundm" id="imgm8" class="d-none imgbgchk" value="">
+                          <label for="imgm8">
+                            <img src="assets/images/profile/pic8.png" alt="Image 4">
+                            <div class="tick_container">
+                              <div class="tick"><i class="bi bi-check"></i></div>
+                            </div>
+                          </label>
+                      </div>
+
+                      <div class='col text-center'>
+                        <input type="radio" name="imgbackgroundm" id="imgm9" class="d-none imgbgchk" value="">
+                          <label for="imgm9">
+                            <img src="assets/images/profile/pic9.png" alt="Image 1">
+                            <div class="tick_container">
+                              <div class="tick"><i class="bi bi-check"></i></div>
+                            </div>
+                            </label>
+                        </div>
+
+                  </div>
+
+                  <!-- Next 8 column -->
+
+                  <div class="row grid-row mt-3">
+                    <!-- first 8 col -->
+                        
+                        <div class='col text-center'>
+                        <input type="radio" name="imgbackgroundm" id="imgm10" class="d-none imgbgchk" value="">
+                          <label for="imgm10">
+                            <img src="assets/images/profile/pic10.png" alt="Image 2">
+                            <div class="tick_container">
+                              <div class="tick"><i class="bi bi-check"></i></div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class='col text-center'>
+                        <input type="radio" name="imgbackgroundm" id="imgm11" class="d-none imgbgchk" value="">
+                          <label for="imgm11">
+                            <img src="assets/images/profile/pic11.png" alt="Image 3">
+                            <div class="tick_container">
+                              <div class="tick"><i class="bi bi-check"></i></div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class='col text-center'>
+                        <input type="radio" name="imgbackgroundm" id="imgm12" class="d-none imgbgchk" value="">
+                            <label for="imgm12">
+                              <img src="assets/images/profile/pic12.png" alt="Image 4">
+                              <div class="tick_container">
+                                <div class="tick"><i class="bi bi-check"></i></div>
+                              </div>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="row grid-row">
+                        <div class='col text-center'>
+                          <input type="radio" name="imgbackgroundm" id="imgm13" class="d-none imgbgchk" value="">
+                            <label for="imgm13">
+                              <img src="assets/images/profile/pic13.png" alt="Image 1">
+                              <div class="tick_container">
+                                <div class="tick"><i class="bi bi-check"></i></div>
+                              </div>
+                              </label>
+                          </div>
+                          <div class='col text-center'>
+                          <input type="radio" name="imgbackgroundm" id="imgm14" class="d-none imgbgchk" value="">
+                            <label for="imgm14">
+                              <img src="assets/images/profile/pic14.png" alt="Image 2">
+                              <div class="tick_container">
+                                <div class="tick"><i class="bi bi-check"></i></div>
+                              </div>
+                            </label>
+                          </div>
+                          <div class='col text-center'>
+                          <input type="radio" name="imgbackgroundm" id="imgm15" class="d-none imgbgchk" value="">
+                            <label for="imgm15">
+                              <img src="assets/images/profile/pic15.png" alt="Image 3">
+                              <div class="tick_container">
+                                <div class="tick"><i class="bi bi-check"></i></div>
+                              </div>
+                            </label>
+                          </div>
+
+                         </div>
+                      <div class="row grid-row">  
+                          <div class='col text-center'>
+                          <input type="radio" name="imgbackgroundm" id="imgm16" class="d-none imgbgchk" value="">
+                              <label for="imgm16">
+                                <img src="assets/images/profile/pic16.png" alt="Image 4">
+                                <div class="tick_container">
+                                  <div class="tick"><i class="bi bi-check"></i></div>
+                                </div>
+                              </label>
+                          </div>
+    
+    
+                      </div>
+
+                </div>
+
+            </div>
+
+ <!-- Mobile Avatar end -->
+            
+          <nav class="navbar fixed-bottom justify-content-center">
+            
+            <a style="width:90%" href="./feed.html" type="submit" class="btn btn-primary btn-lg">Submit <i class="bi bi-arrow-right-circle-fill"></i></a>
+          </nav>
+
+            
         </form>
 
 
