@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <title>Elif5 feed</title>
+    <title>Eli5 feed</title>
 
     <style>
         .tags {
@@ -18,6 +18,20 @@
         }
         .tags::-webkit-scrollbar { 
             display: none;  /* Safari and Chrome */
+        }
+        .toast-container{
+            z-index: 10000;
+        }
+        .toast{
+            color: #0f5132;
+            background: #D1E7DD;
+        }
+        .toast-header{
+            color: #0f5132;
+            background: #ffffff;
+        }
+        .toastclose{
+            color: #ffffff;
         }
     </style>
   </head>
@@ -28,8 +42,12 @@
         <a class="btn" id="btn-back-to-top"><i class="bi bi-house fs-4 text-secondary"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-sunglasses fs-4 text-secondary"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#leaderboard"><i class="bi bi-bar-chart-fill fs-4 text-secondary"></i></a>
-        <a class="btn" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i></a>
+        <a class="btn" href="./index.html"><i class="bi bi-box-arrow-right fs-4 text-secondary"></i></a>
     </nav>
+    
+
+    <div class="fixed-bottom d-lg-none" style="margin-bottom: 4.4rem; margin-left: 83%;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-pen fs-4 text-light"></i></a></div>
+
 
     <div class="container">
     
@@ -40,9 +58,9 @@
           </a>
     
             <div class="form d-none d-lg-block">
-                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen"></i> 32 Answer</button>
-                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-sunglasses"></i></i> 50 Streak</button> 
-                <button class="btn btn-outline-secondary mx-4 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-heart-fill"></i> 10K Likes</button>
+                <button class="btn btn-outline-secondary mx-4 btn-sm"><i class="bi bi-pen"></i> 32 Answer</button>
+                <button class="btn btn-outline-secondary mx-4 btn-sm" ><i class="bi bi-sunglasses"></i></i> 50 Streak</button> 
+                <button class="btn btn-outline-secondary mx-4 btn-sm"><i class="bi bi-heart-fill"></i> 10K Likes</button>
             </div>
 
         </div>
@@ -87,7 +105,7 @@
 
 
       <div class="container mt-5">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-sm-8">
                 <!-- Deskptop -->
                 <div class="container p-4 shadow-sm rounded d-none d-lg-block" style="background-color: #F3F6FF; border-style: solid; border-color: #3366FF;">
@@ -96,7 +114,7 @@
                             <p class="h5">Which exam is better JEE or NEET?</p>
                         </div>
                         <div class="col text-end">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i> Elif5</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i> Eli5</button>
                         </div>
                     </div>
                 </div>
@@ -118,10 +136,7 @@
                         <div class="col-10">
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" class="btn-check" name="radio" id="radio1" autocomplete="off" checked>
-                                <label class="btn btn-outline-primary" for="radio1">Liked</label>
-                              
-                                <input type="radio" class="btn-check" name="radio" id="radio2" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="radio2">Trending</label>
+                                <label class="btn btn-outline-primary" for="radio1">Trending</label>
                               
                                 <input type="radio" class="btn-check" name="radio" id="radio3" autocomplete="off">
                                 <label class="btn btn-outline-primary" for="radio3">Latest</label>
@@ -141,12 +156,8 @@
                     <div class="card-body text-secondary">
                         <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
                         <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 2.5K likes</small> &ensp; 
-
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined2"><i class="bi bi-hash"></i></label> <small class="text-muted"> #1 Trend</small> &ensp;
-
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined3"><i class="bi bi-share-fill"></i></label>  &ensp;
+                        
+                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn" ><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
                     </div>
                 </div>
 
@@ -162,11 +173,7 @@
                         <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
                         <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 1.5K likes</small> &ensp; 
 
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined2"><i class="bi bi-hash"></i></label> <small class="text-muted"> #2 Trend</small> &ensp;
-
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined3"><i class="bi bi-share-fill"></i></label>  &ensp;
+                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn" ><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
                     </div>
 
                 </div>
@@ -183,28 +190,24 @@
                         <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
                         <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 500 likes</small> &ensp; 
 
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined2"><i class="bi bi-hash"></i></label> <small class="text-muted"> #3 Trend</small> &ensp;
-
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined3"><i class="bi bi-share-fill"></i></label>  &ensp;
+                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn"><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
                     </div>
                 </div>
             
                 
             </div>
-            <div class="col-sm-4 fixed-top d-none d-lg-block" style="margin-left: 65%; margin-top: 7%;">
+            <div class="col-sm-4 fixed-top d-none d-lg-block" style="margin-left: 65%; margin-top: 2%;">
                 
                 
                 
                 <div class="card rounded" style="background-color: #F3F6FF; border: none;">
                     <div class="card-body">
                       <h5 class="card-title">What is eli5?</h5>
-                      <p class="card-text">ELI5 is short for “Explain Like I’m 5,” a request for a simple explanation to a complicated question or problem.</p>
+                      <p class="card-text">ELI5 is short for “Explain Like I’m 5,” a request for a simple explanation to an otherwise complicated question or concept.</p>
                       <b class="card-text">How can I answer question?</b>
                       <p class="card-text">Just hit EIL5 button follow the basic rule:
                         <ul>
-                            <li>State it: State the idea clearly, in a few sentences or less.</li>
+                            <li>State it: State the idea clearly, in a few sentences.</li>
                             <li>Elaborate: Explain the idea further in your own words. Elaborate on the concept in a paragraph or less.</li>
                             <li>Exemplify: Provide concrete examples (and counter-examples, if necessary).</li>
                             <li>Summarise: Summarise your explanation.</li>
@@ -216,7 +219,7 @@
                   </div>
 
 
-                  <div class="card mt-2" style="border:none">
+                  <div class="card" style="border:none">
                     <div class="card-body">
                         <h5 class="card-title">Leaderboard</h5>
                         <table class="table" style="border: solid; border-color: #E6E8F0;">
@@ -244,7 +247,7 @@
                                 <td>80</td>
                             </tr>
                             <tr>
-                                <th><a href="#" class="small">View More</a></th>
+                                <th><a href="#" class="small" data-bs-toggle="modal" data-bs-target="#leaderboard">View More</a></th>
                             </tr>
                             </tbody>
                         </table>
@@ -558,13 +561,13 @@
                     <label for="floatingTextarea2">Explain like I’m five</label>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Elify it</button>
+                    <button type="button" class="btn btn-primary">Eli5 it</button>
                     </div>
                 <div class="alert alert-primary alert-dismissible fade show mt-3" role="alert" style=" border-style: solid; border-color: #3366FF;">
                     <strong>Approach to write the Answer</strong>
                     <p>
                         <ul>
-                            <li>State it: State the idea clearly, in a few sentences or less.</li>
+                            <li>State it: State the idea clearly, in a few sentences.</li>
                             <li>Elaborate: Explain the idea further in your own words. Elaborate on the concept in a paragraph or less.</li>
                             <li>Exemplify: Provide concrete examples (and counter-examples, if necessary).</li>
                             <li>Summarise: Summarise your explanation.</li>
@@ -580,7 +583,21 @@
         </div>
     </div>
 
-  
+  <!-- Toast messages -->
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto"><i class="bi bi-clipboard-check"></i> Link Copied</strong>
+        <small></small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        https://www.eli5.club successfully copied!
+      </div>
+    </div>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
       <script>
@@ -608,6 +625,27 @@
         document.documentElement.scrollTop = 0;
         }
         
+
+        const toastTrigger = document.querySelectorAll('.liveToastBtn') 
+        const toastLiveExample = document.getElementById('liveToast')
+
+        toastTrigger.forEach(share => {
+                share.addEventListener('click', function handleClick(event) {
+                
+                    const toast = new bootstrap.Toast(toastLiveExample)
+
+                    toast.show()
+
+                    navigator.clipboard
+                    .writeText('https://www.eli5.club')
+                    .then(
+                        success => console.log("text copied"), 
+                        err => console.log("error copying text")
+                    );
+            });
+            });
+
+
       </script>
 
 
