@@ -12,7 +12,8 @@
     <title>Eli5 feed</title>
 
     <style>
-        .tags {
+
+.tags {
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;  /* Firefox */
         }
@@ -20,7 +21,7 @@
             display: none;  /* Safari and Chrome */
         }
         .toast-container{
-            z-index: 10000;
+            z-index: 1000;
         }
         .toast{
             color: #0f5132;
@@ -69,43 +70,48 @@
 
       <!-- Desktop -->
       <div class="container mt-3 d-none d-lg-block" role="group" aria-label="Basic radio toggle button group">
+        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
+
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary mx-4" for="btnradio1">Trending</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio2">Technology</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio2">Technology</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio3">Science</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio3">Science</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio4">Politics</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio4">Politics</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio5">Sports</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio5">Sports</label>
 
       </div>
       <!-- Mobile overflow-auto -->
       <div class="d-flex justify-content-start mt-3 d-lg-none overflow-auto tags" role="group" aria-label="Basic radio toggle button group">
+        
+        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
+
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary mx-4" for="btnradio1">Trending</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio2">Technology</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio2">Technology</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio3">Science</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio3">Science</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio4">Politics</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio4">Politics</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-        <label class="btn btn-outline-primary mx-4" for="btnradio5">Sports</label>
+        <label class="btn btn-outline-primary mx-2" for="btnradio5">Sports</label>
 
       </div>
 
 
-      <div class="container mt-5">
+      <div class="container mt-3">
         <div class="row mb-5">
             <div class="col-sm-8">
                 <!-- Deskptop -->
@@ -264,6 +270,38 @@
         Launch demo modal
     </a>
      -->
+
+     <!-- Explore Modal -->
+    <div class="modal fade" id="explore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Explore Eli5</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                          <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                      </div>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!-- Profile Modal -->
     <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
