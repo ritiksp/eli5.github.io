@@ -43,13 +43,15 @@
     <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-2 shadow-lg border-top rounded">
         <a class="btn" id="btn-back-to-top"><i class="bi bi-house fs-4 text-secondary"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-sunglasses fs-4 text-secondary"></i></a>
-        <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-plus-circle"></i></a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#suggest" data-bs-whatever="@amazing_ritik"><i class="bi bi-plus-circle"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#leaderboard"><i class="bi bi-bar-chart-fill fs-4 text-secondary"></i></a>
         <a class="btn" href="./index.html"><i class="bi bi-box-arrow-right fs-4 text-secondary"></i></a>
     </nav>
     
 
-    <div class="fixed-bottom d-lg-none" style="margin-bottom: 4.4rem; margin-left: 83%;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-pen fs-4 text-light"></i></a></div>
+    <div class="fixed-top d-lg-none" style="margin-top: 100%; margin-left: 87%; opacity: 0.5;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-arrow-right fs-4 text-light"></i></a></div>
+
+    <div class="fixed-top d-lg-none" style="margin-top: 100%; margin-left: 2%; opacity: 0.5;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-arrow-left fs-4 text-light"></i></a></div>
 
 
     <div class="container">
@@ -387,7 +389,7 @@
 
     <!-- Profile Modal -->
     <div class="modal fade" id="profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Profile Detials</h5>
@@ -416,7 +418,7 @@
 
     <!-- Search Modal -->
     <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
             <div class="modal-header">
             <h6 class="modal-title" id="exampleModalLabel">Search trending categories</h6>
@@ -470,9 +472,39 @@
     </div>
 
 
+<!-- Suggest question -->
+
+    <div class="modal fade" id="suggest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Share your thoughts</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">What do you want to learn as five year old</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="@amazing_ritik">
+            </div>
+            <div class="mb-3">
+            <label for="message-text" class="col-form-label">Question:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
     <!-- Leaderboard Modal -->
     <div class="modal fade" id="leaderboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Leaderboard</h5>
@@ -727,7 +759,7 @@
 
      <!-- Write Elif Modal -->
     <div class="modal fade" id="writeelif" tabindex="-1" aria-labelledby="writeeliflabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-fullscreen-sm-down">
         <div class="modal-content">
             <div class="modal-header">
             <img src="assets/images/profile.png" alt="" height="30">
