@@ -21,7 +21,7 @@
             display: none;  /* Safari and Chrome */
         }
         .toast-container{
-            z-index: 1000;
+            z-index: -2;
         }
         .toast{
             color: #0f5132;
@@ -34,6 +34,7 @@
         .toastclose{
             color: #ffffff;
         }
+
     </style>
   </head>
   <body>
@@ -42,6 +43,7 @@
     <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-2 shadow-lg border-top rounded">
         <a class="btn" id="btn-back-to-top"><i class="bi bi-house fs-4 text-secondary"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-sunglasses fs-4 text-secondary"></i></a>
+        <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-plus-circle"></i></a>
         <a class="btn" data-bs-toggle="modal" data-bs-target="#leaderboard"><i class="bi bi-bar-chart-fill fs-4 text-secondary"></i></a>
         <a class="btn" href="./index.html"><i class="bi bi-box-arrow-right fs-4 text-secondary"></i></a>
     </nav>
@@ -55,7 +57,10 @@
     <nav class="navbar navbar-light border-bottom border-light">
         <div class="container justify-content-start">
           <a class="navbar-brand" href="#">
-            <img src="assets/images/profile.png" alt="" height="50"> <b class="display-6">Hey Ritik</b>
+            <img src="assets/images/profile.png" alt="" height="50"> <b class="blockquote">Hey Ritik</b>
+            <div class="text-end">
+                <a class="btn btn-outline-primary rounded align-center" data-bs-toggle="modal" data-bs-target="#search"><i class="bi bi-search"></i></a>
+            </div>
           </a>
     
             <div class="form d-none d-lg-block">
@@ -70,7 +75,7 @@
 
       <!-- Desktop -->
       <div class="container mt-3 d-none d-lg-block" role="group" aria-label="Basic radio toggle button group">
-        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
+        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill explore" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
         <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
@@ -91,7 +96,7 @@
       <!-- Mobile overflow-auto -->
       <div class="d-flex justify-content-start mt-3 d-lg-none overflow-auto tags" role="group" aria-label="Basic radio toggle button group">
         
-        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
+        <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill explore" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
         <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
@@ -407,6 +412,63 @@
         </div>
         </div>
     </div>
+
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Search trending categories</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form class="d-flex" role="search">
+                        <input class="form-control mb-1" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <ul class="list-group list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Sports</div> 
+                          </div>
+                          <span class="badge bg-primary rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Science</div>
+                          </div>
+                          <span class="badge bg-primary rounded-pill">30</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Technology</div>    
+                          </div>
+                          <span class="badge bg-primary rounded-pill">10</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold">Covid19</div>    
+                            </div>
+                            <span class="badge bg-primary rounded-pill">13</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold">China</div>    
+                            </div>
+                            <span class="badge bg-primary rounded-pill">22</span>
+                          </li>
+
+                      </ul>
+
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
 
     <!-- Leaderboard Modal -->
     <div class="modal fade" id="leaderboard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
