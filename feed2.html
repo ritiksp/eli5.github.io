@@ -34,32 +34,15 @@
         .toastclose{
             color: #ffffff;
         }
+        .round{
+            border-radius: 7px;
+        }
 
     </style>
   </head>
   <body>
 
 
-    <!-- <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-2 shadow-lg border-top rounded">
-        <a class="btn" id="btn-back-to-top"><i class="bi bi-house fs-4 text-secondary"></i></a>
-        <a class="btn" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-sunglasses fs-4 text-secondary"></i></a>
-        <a class="btn" data-bs-toggle="modal" data-bs-target="#suggest" data-bs-whatever="@amazing_ritik"><i class="bi bi-plus-circle"></i></a>
-        <a class="btn" data-bs-toggle="modal" data-bs-target="#leaderboard"><i class="bi bi-bar-chart-fill fs-4 text-secondary"></i></a>
-        <a class="btn" href="./index.html"><i class="bi bi-box-arrow-right fs-4 text-secondary"></i></a>
-    </nav> -->
-
-    <nav class="navbar navbar-light bg-light fixed-bottom d-lg-none px-4 py-2 shadow-lg border-top rounded">
-    
-        <a class="btn btn-outline-primary border-0" data-bs-toggle="modal" data-bs-target="#profile"><i class="bi bi-arrow-left fs-4"></i></a>
-        <a class="btn btn-outline-primary border-0" data-bs-toggle="modal" data-bs-target="#suggest" data-bs-whatever="@amazing_ritik"><i class="bi bi-plus-circle fs-2"></i></a>
-        <a class="btn btn-outline-primary border-0" data-bs-toggle="modal" data-bs-target="#leaderboard"><i class="bi bi-arrow-right fs-4"></i></a>
-        
-    </nav>
-    
-
-    <!-- <div class="fixed-top d-lg-none" style="margin-top: 100%; margin-left: 87%; opacity: 0.5;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-arrow-right fs-4 text-light"></i></a></div>
-
-    <div class="fixed-top d-lg-none" style="margin-top: 100%; margin-left: 2%; opacity: 0.5;"><a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif" style="border-radius:100%"><i class="bi bi-arrow-left fs-4 text-light"></i></a></div> -->
 
 
     <div class="container">
@@ -68,7 +51,7 @@
         <div class="container justify-content-start">
           <a class="navbar-brand" href="#">
             <img src="assets/images/profile.png" alt="" height="50"> <b class="blockquote">Hey Ritik</b>
-            <div class="text-end">
+            <div class="text-end d-lg-none">
                 <a class="btn btn-outline-secondary rounded align-center" data-bs-toggle="modal" data-bs-target="#search"><i class="bi bi-sunglasses"></i></a>
                 <a class="btn btn-outline-secondary rounded align-center" data-bs-toggle="modal" data-bs-target="#search"><i class="bi bi-bar-chart-fill"></i></a>
                 <a class="btn btn-outline-secondary rounded align-center" data-bs-toggle="modal" data-bs-target="#search"><i class="bi bi-box-arrow-right"></i></a>
@@ -90,21 +73,21 @@
         <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill explore" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio1">Trending</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio2">Technology</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio2">Technology</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio3">Science</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio3">Science</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio4">Politics</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio4">Politics</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio5">Sports</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio5">Sports</label>
 
-        <a href="#" class="link-primary">See more</a>
+        <a href="#" class="btn btn-outline-primary mx-2 rounded-pill explore">See more</a>
 
       </div>
       <!-- Mobile overflow-auto -->
@@ -113,19 +96,19 @@
         <button type="button" class="btn btn-outline-secondary mx-2 rounded-pill explore" data-bs-toggle="modal" data-bs-target="#explore">Explore</button>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-        <label class="btn btn-outline-primary mx-2" for="btnradio1">Trending</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio1">Trending</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio2">Technology</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio2">Technology</label>
       
         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio3">Science</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio3">Science</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio4">Politics</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio4">Politics</label>
 
         <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-        <label class="btn btn-outline-primary mx-2" for="btnradio5">Sports</label>
+        <label class="btn btn-outline-primary mx-1" for="btnradio5">Sports</label>
 
         <button type="button" class="btn btn-outline-primary mx-2 rounded-pill explore" data-bs-toggle="modal" data-bs-target="#explore">More..</button>
         
@@ -135,100 +118,103 @@
       <div class="container mt-3">
         <div class="row mb-5">
             <div class="col-sm-8">
-                <!-- Deskptop -->
-                <div class="container p-4 shadow-sm rounded d-none d-lg-block" style="background-color: #F3F6FF; border-style: solid; border-color: #3366FF;">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <p class="h5">Which exam is better JEE or NEET?</p>
+                
+                <!-- New design start  -->
+                <p class="fw-normal"><i class="bi bi-brightness-alt-high fs-4"></i>  Good Morning</p>
+
+                <div class="card mb-3 shadow-sm round">
+                    <div class="row g-0 p-2">
+                      <div class="col-2 my-auto">
+                        <img src="https://pngimg.com/uploads/amazon/amazon_PNG5.png" class="img-fluid rounded-start" width="50px">
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <div class="col text-end">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i> Eli5</button>
+                      </div>
+                    </div>
+                </div>
+
+
+
+                <p class="fw-normal mb-0"><i class="bi bi-sunglasses fs-4"></i>  Trending categories</p>
+
+                <div class="card mb-3 border-0">
+                    <div class="row g-0">
+                      <div class="col-12">
+                        <div class="card-body">
+                            <button type="button" style="background: #F3F6FF" class="btn btn-outline-primary mb-2 mx-1">Sports</button>
+                            <button type="button" style="background: #F3F6FF" class="btn btn-outline-primary mb-2 mx-1">Covid19</button>
+                            <button type="button" style="background: #F3F6FF" class="btn btn-outline-primary mb-2 mx-1">Science</button>
+                            <button type="button" style="background: #F3F6FF" class="btn btn-outline-primary mb-2 mx-1">Technology</button>
+                            <button type="button" style="background: #F3F6FF" class="btn btn-outline-primary mb-2 mx-1">Eli5</button>
+                            
                         </div>
+                      </div>
                     </div>
                 </div>
-                <!-- Mobile -->
-                <div class="container p-4 shadow-sm rounded d-lg-none" style="background-color: #F3F6FF; border-style: solid; border-color: #3366FF;">
-                    <div class="row align-items-center">
-                        <div class="col-10">
-                            <b>Which exam is better JEE or NEET?</b>
+
+
+                <p class="fw-normal"><i class="bi bi-hash fs-4 bold"></i>  Trending questions</p>
+
+                <div class="card mb-3 shadow-sm round">
+                    <div class="row g-0 p-2">
+                      <div class="col-2 my-auto text-center">
+                            <p class="lead fw-bold fs-2" style="color:#3366FF">#1</p>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-text small">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <div class="col-2 text-end">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeelif"><i class="bi bi-pen"></i></button>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm round">
+                    <div class="row g-0 p-2">
+                      <div class="col-2 my-auto text-center">
+                            <p class="lead fw-bold fs-2" style="color:#3366FF">#2</p>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-text small">What causes a virus to change to a new variant? What is the impact on Covid-19 vaccines?</p>
                         </div>
+                      </div>
                     </div>
                 </div>
 
-                <div class="container mt-3">
-                    <div class="row align-items-center">
-                        <div class="col-2 d-none d-lg-block">Sort by</div>
-                        <div class="col-10">
-                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="radio" id="radio1" autocomplete="off" checked>
-                                <label class="btn btn-outline-primary" for="radio1">Trending</label>
-                              
-                                <input type="radio" class="btn-check" name="radio" id="radio3" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="radio3">Latest</label>
-                              </div>
+
+                <div class="card mb-3 shadow-sm round">
+                    <div class="row g-0 p-2">
+                      <div class="col-2 my-auto text-center">
+                            <p class="lead fw-bold fs-2" style="color:#3366FF">#3</p>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-text small">What is OpenPilot and how its competing with Teskla?</p>
                         </div>
+                      </div>
                     </div>
                 </div>
 
-                <div class="card border-light mt-4 shadow-sm rounded">
-                    <div class="card-header bg-white border-light">
-                        <img src="assets/images/profile2.png" alt="" height="30">
-                        <b>@rider_ritik</b> &emsp; <small class="text-muted">3hr</small>
-                    </div>
-                    <div class="card-body text-secondary">
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="card-body text-secondary">
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 2.5K likes</small> &ensp; 
-                        
-                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn" ><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
+
+                <p class="fw-normal"><i class="bi bi-suit-heart"></i>   Best answer</p>
+
+                <div class="card mb-3 shadow-sm round">
+                    <h5 class="card-header fs-6 bg-white"><img src="assets/images/profile2.png" alt="" height="30"> @rider_ritik &ensp;  <i style="color: #3366FF;" class="bi bi-heart-fill fs-6"></i> <small class="text-muted"> 2.5K likes</small> </h5>
+                    <div class="card-body">
+                    <h5 class="card-title fs-6 border-bottom">Why OTT platforms like Netflix, Amazon Prime and Hotstar are hosting sports live streams?</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
 
-                <div class="card border-light mt-4 shadow-sm rounded" >
-                    <div class="card-header bg-white border-light">
-                        <img src="assets/images/profile3.png" alt="" height="30">
-                        <b>@explorer_dhruv</b> &emsp; <small class="text-muted">10hr</small>
-                    </div>
-                    <div class="card-body text-secondary">
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="card-body text-secondary">
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 1.5K likes</small> &ensp; 
 
-                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn" ><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
-                    </div>
+                <!-- New design ends -->
 
-                </div>
-
-                <div class="card border-light mt-4 mb-4 shadow-sm rounded" >
-                    <div class="card-header bg-white border-light">
-                        <img src="assets/images/profile.png" alt="" height="30">
-                        <b>@mindlowing_annie</b> &emsp; <small class="text-muted">30m</small>
-                    </div>
-                    <div class="card-body text-secondary">
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="card-body text-secondary">
-                        <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
-                        <label style="border-radius: 100%;" class="btn btn-outline-primary" for="btn-check-outlined1"><i class="bi bi-heart-fill"></i></label> <small class="text-muted"> 500 likes</small> &ensp; 
-
-                        <a style="border-radius: 100%;" class="btn btn-outline-primary liveToastBtn"><i class="bi bi-share-fill"></i></a> <small class="text-muted"> Share</small>
-                    </div>
-                </div>
-            
-                <div class="container text-center mb-4">
-                    <button type="button" class="btn btn-outline-primary mx-2 rounded-pill"><i class="bi bi-plus"></i>See More</button>
-                 </div>
+        
             </div>
+
             <div class="col-sm-4 fixed-top d-none d-lg-block" style="margin-left: 65%; margin-top: 2%;">
-                
-                
                 
                 <div class="card rounded" style="background-color: #F3F6FF; border: none;">
                     <div class="card-body">
@@ -345,7 +331,7 @@
                     
                 </div>
 
-                <div class="container px-4 py-5" id="custom-cards">
+                <div class="container d-lg-none px-4 py-5" id="custom-cards">
                     <h2 class="pb-2 border-bottom">Trending on Eli5</h2>
                 
                     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
